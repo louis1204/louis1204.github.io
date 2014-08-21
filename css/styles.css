@@ -1,0 +1,179 @@
+﻿body {
+	background: #000;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+a {
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+	color: #F30;
+	text-decoration: none;	
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+img {
+	border: 0;	
+}
+
+ul {
+	margin-top: -1px;
+	border-top: 1px;
+	text-transform:lowercase;
+	overflow:hidden;
+	margin-bottom:0;
+	list-style:none;
+	margin-left:0;
+	display:table;
+	clear:both;
+	text-align:left;
+}
+li a {
+	color:white;
+}
+
+ul li ul {
+	display:none;
+}
+
+ul li:hover ul {
+	display:block;
+}
+
+#white {
+	color:white;
+}
+
+#title {
+	background: transparent;
+	bottom: -90px;
+	font: 25px Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+	padding: 10px 20px;
+	position: fixed;
+	right: 0px;	
+	text-align: right;
+	width: 100%;
+}
+	#title h1 {
+		font: 30px 'Ultra', Arial, serif;
+		margin: 0;	
+		padding: 0;
+	}
+
+#thumbnails-area {
+	height: 90px;
+	left: 200px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background:transparent;
+}
+#thumbnails {
+	background: #000;
+	background: rgba(0, 0, 0, 0.8);	
+	height: 120px;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+	#thumbnails ul {
+		margin: 0;
+		padding: 0;
+	}
+		#thumbnails li {
+			float: left;
+			list-style: none;
+			margin: 5px;
+			padding: 0;
+		}
+		#thumbnails a {
+			outline: none;
+		}
+		#thumbnails img {
+			width: 112px;
+		}
+			
+#pointer {
+	border: 2px solid white;
+	cursor: pointer;
+	height: 77px;
+		margin: 3px;
+	position: absolute;
+	width: 114px;
+	top:0;
+}
+
+#flash {
+	background:black;
+	display: none;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+}
+
+#pause {
+	display: none;
+	font: 50px 'Ultra', arial, serif;
+	height: 100%;
+	opacity: 0.4;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 0 5px #000;
+	width: 100%;
+}
+	#pause a {
+		color: #FFF;
+		height: 100px;
+		left: 50%;
+		margin: -50px 0 0 -250px;
+		position: absolute;
+		text-transform: lowercase;
+		top: 50px;
+		width: 500px;
+	}
+
+#sidebarwrapper {
+	top: 130px;
+	left: 0;
+	width:auto;
+	height:auto;
+	position:fixed;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	line-height: 2;
+	letter-spacing: 3px;
+	font-size:25px
+}		
+.vegas-loading {
+	top: auto;
+	bottom: 40px;
+	left: 40px;
+}
+.vegas-overlay {
+	background-image: url(../js/vegas/overlays/05.png);
+}
+
+.jspHorizontalBar {
+	height: 20px;	
+}
+	.jspHorizontalBar .jspTrack {
+		background: #333;
+	}
+	.jspHorizontalBar .jspDrag {
+		background: #666;
+		cursor: ew-resize;
+	}
+	#thumbnails:hover .jspHorizontalBar .jspDrag {
+		background: white;
+    }           
