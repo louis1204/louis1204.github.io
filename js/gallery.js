@@ -1,7 +1,6 @@
 $( 
 	window.onload = function() {
     var pictures = [],
-        $pointer = $( '#pointer' ),
         $thumbnails = $( '#thumbnails' ),
         $thumbnails_area = $( '#thumbnails-area' ),
         $title = $( '#title' ),
@@ -57,25 +56,16 @@ $(
         $flash.show().fadeOut( 500 );
 
         var pointerPosition = $thumbnails.find( 'li' ).eq( idx ).position().left;
-            
-        $pointer.animate({
-            left: pointerPosition
-        }, 500, 'swing' );
 
         if ( ( pointerPosition > $thumbnails.width() || pointerPosition < jScrollPaneApi.getContentPositionX() ) && !$thumbnails.is( ':hover' ) ) {
             jScrollPaneApi.scrollToX( pointerPosition, true );
         }
-
-        $pointer.click( function() {
-            $thumbnails.find( 'a' ).eq( idx ).click()
-        });
     });
 
     // Photograph
 
     $thumbnails.find( 'a' ).click( function() {
         $pause.show();
-        $pointer.hide();
 
         $thumbnails.hide();//animate( { top: '-90px' });
         $title.hide();//animate( { bottom: '-90px' });    
@@ -88,8 +78,7 @@ $(
 
     $pause.click( function() {
         $pause.hide();
-        $pointer.show();
-    
+
         $title.show();//animate( { bottom:'0px' });
         $thumbnails.show();//animate( { top:'0px' });
 		$sidebar.show()
