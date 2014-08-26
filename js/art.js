@@ -22,6 +22,6 @@ window.onload = function() {
 	
 	resume_button.style.cursor = 'pointer';
 	resume_button.onclick = function() {
-		window.location = 'images/LouisWongResume4.pdf';
+		window.location = 'images/LouisWongResume5.pdf';
 	}
 }
